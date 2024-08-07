@@ -34,5 +34,6 @@ Perusahaan modern menghadapi tantangan untuk meningkatkan performa kerja karyawa
 Dikarenakan oleh keterbatasan sumber daya berupa ketersediaan GPU, proses training dilakukan pada `Google Colab T4 GPU`. Sehingga instalasi yang diperlukan hanyalah insatalasi untuk menjalankan ChatBot, yang perlu dilakukan adalah menginstall package yang terdapat pada `requirements.txt` melalui command berikut:
 
 ```bash
+// installing chatbot packages
 pip install -r requirements.txt
 ```
