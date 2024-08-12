@@ -40,12 +40,8 @@ pip install -r requirements.txt
 
 Retrieval-Augmented Generation (RAG) adalah teknik yang menggabungkan model Language Model (LLM) dengan model embedding. Dalam implementasi ini, dua model yang digunakan adalah:
 
-- **Model LLM**: 
-  - `unsloth/llama` (tersedia di HuggingFace)
-  - `llama-index` (tersedia di HuggingFace)
-
-- **Model Embedding**:
-  - `BAAI/bge-m3` (tersedia di HuggingFace)
+- **Model LLM**: `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` (tersedia di HuggingFace)
+- **Model Embedding**: `BAAI/bge-m3` (tersedia di HuggingFace)
 
 ## Deployment
 
