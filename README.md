@@ -25,28 +25,53 @@ Perusahaan modern menghadapi tantangan untuk meningkatkan performa kerja karyawa
 - [Fine-Tuning](#fine-tuning)
 - [Deployment](#deployement)
 - [Evaluation](#evaluation)
-- [Credits](#creditss)
+- [Credits](#credits)
 
-## Installation
-Dikarenakan oleh keterbatasan sumber daya berupa ketersediaan GPU, proses training dilakukan pada `Google Colab T4 GPU`. Sehingga instalasi yang diperlukan hanyalah insatalasi untuk menjalankan ChatBot, yang perlu dilakukan adalah menginstall package yang terdapat pada `requirements.txt` melalui command berikut:
+## Instalasi
+
+Karena keterbatasan sumber daya GPU, proses pelatihan model dilakukan menggunakan `Google Colab T4 GPU`. Untuk menjalankan ChatBot, Anda hanya perlu menginstal paket-paket yang tercantum dalam file `requirements.txt`. Untuk melakukan instalasi, gunakan perintah berikut:
 
 ```bash
-// installing chatbot packages
+# Menginstal paket-paket untuk ChatBot
 pip install -r requirements.txt
 ```
 
-## Fine-Tuning 
-Retrieval-Augmented Generation atau biasa disebut RAG adalah teknik yang menggabungkan model llm dan model embedding, sehingga terdapat 2 model yang digunakan, yaitu: 
-- Model LLM: unsloth/llama dan llama-index (HuggingFace)
-- Model Embedding: BAAI/bge-m3 (HuggingFace)
+## Fine-Tuning
+
+Retrieval-Augmented Generation (RAG) adalah teknik yang menggabungkan model Language Model (LLM) dengan model embedding. Dalam implementasi ini, dua model yang digunakan adalah:
+
+- **Model LLM**: 
+  - `unsloth/llama` (tersedia di HuggingFace)
+  - `llama-index` (tersedia di HuggingFace)
+
+- **Model Embedding**:
+  - `BAAI/bge-m3` (tersedia di HuggingFace)
 
 ## Deployment
-Integrasi 2 model tersebut diimplementasikan pada framework gradio dengan bantuan ollama untuk deployment model llm.
 
-## Evaluation
-Evaluasi yang dilakukan adalah dengan menguji melalui beberapa pertanyaan, apakah sistem RAG sudah mampu menjawab pertanyaan atau intruksi dengan baik.
+Integrasi kedua model tersebut diimplementasikan menggunakan framework Gradio dengan bantuan Ollama untuk deployment model LLM. Proses deployment mencakup:
+
+1. **Integrasi Model**: Menghubungkan model LLM dan model embedding.
+2. **Deployment**: Menyebarluaskan model melalui Gradio dan Ollama.
+
+## Evaluasi
+
+Evaluasi dilakukan dengan menguji sistem RAG menggunakan serangkaian pertanyaan untuk menilai kemampuannya dalam memberikan jawaban atau instruksi yang akurat. Hasil evaluasi disajikan dalam tabel berikut:
+
 | Pertanyaan | Jawaban | Skor |
-| :---:   | :---: | :---: |
-| Seconds | 301   | 283   |
+| :--------- | :------ | :---: |
+| Seconds    | 301     | 283   |
+
+**Catatan**: Skor merupakan hasil penilaian efektivitas jawaban terhadap pertanyaan yang diajukan.
 
 ## Credits
+
+Terima kasih kepada semua kontributor dan pengembang yang telah membantu dalam pembuatan dan pengembangan sistem ini. Khususnya kepada:
+
+- Pengembang model LLM: `unsloth/llama`, `llama-index`
+- Pengembang model embedding: `BAAI/bge-m3`
+- Tim Gradio dan Ollama untuk dukungan dalam deployment.
+
+---
+
+Dokumentasi ini bertujuan memberikan gambaran menyeluruh tentang proses instalasi, fine-tuning, deployment, dan evaluasi sistem, serta memberikan kredit yang sesuai kepada pihak-pihak yang berkontribusi. Jika ada pertanyaan lebih lanjut atau bantuan yang diperlukan, jangan ragu untuk menghubungi tim pengembang melalui saluran yang tersedia.
