@@ -22,13 +22,10 @@ Perusahaan modern menghadapi tantangan untuk meningkatkan performa kerja karyawa
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Training](#training)
+- [Fine-Tuning](#fine-tuning)
+- [Deployment](#deployement)
 - [Evaluation](#evaluation)
-- [Contributing](#contributing)
-- [License](#license)
+- [Credits](#creditss)
 
 ## Installation
 Dikarenakan oleh keterbatasan sumber daya berupa ketersediaan GPU, proses training dilakukan pada `Google Colab T4 GPU`. Sehingga instalasi yang diperlukan hanyalah insatalasi untuk menjalankan ChatBot, yang perlu dilakukan adalah menginstall package yang terdapat pada `requirements.txt` melalui command berikut:
@@ -37,3 +34,19 @@ Dikarenakan oleh keterbatasan sumber daya berupa ketersediaan GPU, proses traini
 // installing chatbot packages
 pip install -r requirements.txt
 ```
+
+## Fine-Tuning 
+Retrieval-Augmented Generation atau biasa disebut RAG adalah teknik yang menggabungkan model llm dan model embedding, sehingga terdapat 2 model yang digunakan, yaitu: 
+- Model LLM: unsloth/llama dan llama-index (HuggingFace)
+- Model Embedding: BAAI/bge-m3 (HuggingFace)
+
+## Deployment
+Integrasi 2 model tersebut diimplementasikan pada framework gradio dengan bantuan ollama untuk deployment model llm.
+
+## Evaluation
+Evaluasi yang dilakukan adalah dengan menguji melalui beberapa pertanyaan, apakah sistem RAG sudah mampu menjawab pertanyaan atau intruksi dengan baik.
+| Pertanyaan | Jawaban | Skor |
+| :---:   | :---: | :---: |
+| Seconds | 301   | 283   |
+
+## Credits
