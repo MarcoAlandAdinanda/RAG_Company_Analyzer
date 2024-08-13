@@ -21,19 +21,37 @@ Perusahaan modern menghadapi tantangan untuk meningkatkan performa kerja karyawa
 
 ## Table of Contents
 - [Overview](#overview)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Contributing](#contributing)
-- [License](#license)
+- [Instalasi](#instalasi)
+- [Fine-Tuning](#fine-tuning)
+- [Deployment](#deployement)
+- [Evaluasi](#evaluasi)
 
-## Installation
-Dikarenakan oleh keterbatasan sumber daya berupa ketersediaan GPU, proses training dilakukan pada `Google Colab T4 GPU`. Sehingga instalasi yang diperlukan hanyalah insatalasi untuk menjalankan ChatBot, yang perlu dilakukan adalah menginstall package yang terdapat pada `requirements.txt` melalui command berikut:
+## Instalasi
+Karena keterbatasan sumber daya GPU, proses fine-tuning model dilakukan menggunakan `Google Colab T4 GPU` untuk menjalankan beberapa notebook dan script, sehingga perlu menginstal packages yang terdapat dalam file `requirements.txt`. Untuk melakukan instalasi, gunakan perintah berikut:
 
 ```bash
-// installing chatbot packages
+# installing packages
 pip install -r requirements.txt
 ```
+
+## Fine-Tuning
+Retrieval-Augmented Generation (RAG) adalah teknik yang menggabungkan model LLM dengan model embedding. Dalam implementasi ini, dua model yang digunakan adalah:
+- **Model LLM**: `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` (tersedia di HuggingFace)
+- **Model Embedding**: `BAAI/bge-m3` (tersedia di HuggingFace)
+
+## Deployment
+Integrasi kedua model tersebut diimplementasikan menggunakan framework Gradio dengan bantuan Ollama untuk deployment model LLM. Proses deployment mencakup:
+1. **Integrasi Model**: Menghubungkan model LLM dan model embedding.
+2. **Deployment**: Menyebarluaskan model melalui Gradio dan Ollama.
+
+## Evaluasi
+Evaluasi dilakukan dengan menguji sistem RAG menggunakan serangkaian pertanyaan untuk menilai kemampuannya dalam memberikan jawaban atau instruksi yang akurat. Hasil evaluasi disajikan dalam tabel berikut:
+| Pertanyaan | Jawaban | Skor |
+| :--------- | :------ | :---: |
+| Seconds    | 301     | 283   |
+
+**Catatan**: Skor merupakan hasil penilaian efektivitas jawaban terhadap pertanyaan yang diajukan.
+
+---
+
+Dokumentasi ini bertujuan memberikan gambaran menyeluruh mengenai tim Triwira Data dalam mengembangkan sistem ini, dimulai dari proses instalasi, fine-tuning, deployment, dan evaluasi sistem. Jika ada pertanyaan lebih lanjut atau bantuan yang diperlukan, jangan ragu untuk menghubungi tim Triwira Data melalui channel yang telah tersedia.
