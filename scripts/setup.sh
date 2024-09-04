@@ -1,7 +1,7 @@
 #!/bin/bash
 
-wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/deployments/RAGModule.py 
-wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/deployments/app.py
+wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/scripts/RAGModule.py
+wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/scripts/app.py
 gdown https://drive.google.com/drive/folders/1wXwk4RJ7PSxJBA_d9ZjaPlA6tu-e5jjO -O data --folder
 
 pip install colab-xterm
