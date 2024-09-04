@@ -15,3 +15,5 @@ pip install llama-parse==0.4.9
 
 curl -fsSL https://ollama.com/install.sh | sh
 nohup ollama serve &
+
+gdown https://drive.google.com/drive/folders/1wXwk4RJ7PSxJBA_d9ZjaPlA6tu-e5jjO -O data --folder
