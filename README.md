@@ -21,7 +21,7 @@ Dalam pengembangan talenta (talent growth), langkah awal yang diperlukan, teruta
 ## Table of Contents
 - [Overview](#overview)
 - [Instalasi](#instalasi)
-- [Fine-Tuning](#fine-tuning)
+- [Development](#development)
 - [Deployment](#deployement)
 - [Evaluasi](#evaluasi)
 
@@ -42,8 +42,8 @@ Sebaliknya, jika ingin menjalankan aplikasi Mitrakara melalui google colab maka 
 
 ## Development
 Retrieval-Augmented Generation (RAG) adalah teknik yang menggabungkan model LLM dengan model embedding. Sehingga terdapat dua model yang digunakan sebagai base model, yaitu:
-- **Model LLM**: `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` (tersedia di HuggingFace)
-- **Model Embedding**: `BAAI/bge-m3` (tersedia di HuggingFace)
+- **Model LLM**: `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, dapat diakses melalui https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
+- **Model Embedding**: `BAAI/bge-m3`, dapat diakses melalui https://huggingface.co/BAAI/bge-m3
 
 Setelah melalui proses fine-tuning kedua model diunggah pada HuggingFace.
 Untuk LLM terdapat 2 kali pengunggahan, yaitu: 
