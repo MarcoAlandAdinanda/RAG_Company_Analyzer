@@ -1,5 +1,8 @@
 #!/bin/bash
 
+wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/deployments/RAGModule.py 
+wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/deployments/app.py
+
 pip install colab-xterm
 pip install gradio
 pip install ollama
