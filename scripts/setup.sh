@@ -2,6 +2,7 @@
 
 wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/deployments/RAGModule.py 
 wget https://raw.githubusercontent.com/MarcoAlandAdinanda/AIC_TriwiraData/main/deployments/app.py
+gdown https://drive.google.com/drive/folders/1wXwk4RJ7PSxJBA_d9ZjaPlA6tu-e5jjO -O data --folder
 
 pip install colab-xterm
 pip install gradio
@@ -18,7 +19,3 @@ pip install llama-parse==0.4.9
 
 curl -fsSL https://ollama.com/install.sh | sh
 nohup ollama serve &
-
-ollama pull MarcoAland/llama3.1-rag-indo
-
-gdown https://drive.google.com/drive/folders/1wXwk4RJ7PSxJBA_d9ZjaPlA6tu-e5jjO -O data --folder
