@@ -10,13 +10,21 @@
 Dalam pengembangan talenta (talent growth), langkah awal yang diperlukan, terutama untuk karyawan baru, adalah adaptasi lingkungan. Karyawan baru biasanya menjalani orientasi/onboarding terlebih dahulu setelah diterima oleh suatu perusahaan. Orientasi memiliki dampak yang cukup besar terhadap loyalitas dan produktivitas karyawan. Pada tahap ini, terdapat beberapa tantangan tersendiri, seperti informasi berlebih yang didapat dalam waktu yang cenderung singkat, proses administratif yang rumit, kesenjangan budaya, kurangnya pendampingan yang dikarenakan senior yang sibuk, dll. Penggunaan teknologi Artificial Intelligence (AI) dapat menjadi salah satu solusi untuk menyelesaikan permasalahan-permasalahan tersebut. Teknik yang diimplementasikan dalam pengembangan penelitian ini adalah Retrieval-Augmented Generation (RAG).
  
 **Apa itu Retrieval-Augmented Generation (RAG)?**
-- RAG adalah teknik yang menggabungkan kemampuanLLM dengan sumber data eksternal. Ini memungkinkan model untuk menghasilkan respons yang lebih akurat dan relevan dengan mengakses informasi dari basis data yang ditentukan
+- RAG adalah teknik yang menggabungkan kemampuanLLM dengan sumber data eksternal. Ini memungkinkan model untuk menghasilkan respons yang lebih akurat dan relevan dengan mengakses informasi dari basis data yang ditentukan 
 
 **Apa saja manfaat ChatBot berbasis RAG untuk Perusahaan atau Bisnis?**
 - Akses Informasi Cepat dan Akurat: talenta akan mendapatkan informasi yang mereka butuhkan dengan cepat, sehingga akan berdampak kepada efisiensi kerja.
 - Meningkatkan Produktivitas: Chatbot juga mampu membantu talent dalam tugas sehari-hari, seperti memberikan motivasi bagi para talent.
 - Pembelajaran dan Pengembangan: Dengan diberinya akses langsung ke pengetahuan perusahaan, mendukung pemahaman para stakeholder dalm membuat kebijakan dan prosedur perusahaan/binis.
 - Pengambilan Keputusan yang Lebih Baik: Akses cepat ke informasi akurat memungkinkan stakeholders mengkases pengambilan keputusan yang lebih baik dan berdasarkan data asli perusahaan.
+
+Sehingga tim TriwiraData menghadirkan solusi berupa aplikasi dengan nama Mitrakara, yaitu aplikasi berbasis Retrieval-Augmented Generation (RAG) untuk mengoptimalkan proses Talent Growth. 
+Nama Mitrakara berasal dari bahasa Sansekerta, di mana kata ini merupakan gabungan dari dua kata: "Mitra" dengan arti teman dan "Kara" yang berarti "yang menghasilkan."
+
+Dengan demikian, **Mitrakara** secara keseluruhan dapat diartikan sebagai "sahabat yang membawa manfaat" atau "teman yang bermanfaat" calam konteks ini berarti Mitrakara mampu membantu para talent sebagai teman dalam bekerja.
+
+![User Interface Mitrakara](user_interface.png)
+
 
 ## Table of Contents
 - [Overview](#overview)
