@@ -43,16 +43,21 @@ iface = gr.Interface(
     outputs=gr.Textbox(label="Respons Mitrakara"),
     title="Hai, namaku Mitrakara. Selamat datang!👋",
     description=(
-        '''Berikut adalah beberapa tips untuk bertanya denganku✨✨✨
-        1. Gunakan kata 'dokumen:' jika ingin bertanya mengenai dokumen/administrasi perusahaan.
-        2. Gunakan kalimat tanya yang baik.
-        3. Enjoy the conversation.😊'''
-        '''\n\nContoh penggunaan:\n1. Pertanyaan umum: "Beri saya 5 motivasi untuk menjadi pribadi yang lebih baik."
-        2. Pertanyaan mengenai administrasi perusahaan: "Dokumen: Siapa nama ketua direksi dan apa saja tanggung jawab beliau."'''
+        "Berikut adalah beberapa tips untuk bertanya denganku✨✨✨\n1. Gunakan prompt dengan baik dan jelas.\n2. Prompt tidak boleh mengandung ujaran kebencian.\n3. Don't forget to enjoy the conversation.😊 \n\n Referensi format pertanyaan dapat diakses melalui bagian examples."
     ),
     examples=[
-        ["Beri saya 5 motivasi untuk menjadi pribadi yang lebih baik."],
-        ["Dokumen: Siapa nama ketua direksi dan apa saja tanggung jawab beliau."]
+        ["Hai"],
+        ["Apa visi dan misi perusahaan"],
+        ["Saya harus bekerja jam berapa dan pakai pakaian apa"],
+        ["Bagaimana jika saya telat/terlambat"],
+        ["Sebagai staf penjualan, siapa saja orang yang harus saya kenal"],
+        ["Bagaimana gambaran pekerjaan yang harus saya lakukan sebagai staf penjualan"],
+        ["Berapa gaji saya sebagai staf penjualan"],
+        ["Bagaimana cara kerja lembur dan berapa upahnya"],
+        ["Apakah ada jatah cuti, bagaimana caranya"],
+        ["Jika saudara saya menikah apakah bisa izin? Bagaimana caranya?"],
+        ["Bagaimana sanksi jika saya melanggar peraturan?"],
+        ["Beri contoh pelanggaran hingga membuat saya di PHK"],
     ],
     theme=gr.themes.Soft(),
 )
