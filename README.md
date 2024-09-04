@@ -26,17 +26,31 @@ Dalam pengembangan talenta (talent growth), langkah awal yang diperlukan, teruta
 - [Evaluasi](#evaluasi)
 
 ## Instalasi
-Karena keterbatasan sumber daya GPU, proses fine-tuning model dilakukan menggunakan `Google Colab T4 GPU` untuk menjalankan beberapa notebook dan script, sehingga perlu menginstal packages yang terdapat dalam file `requirements.txt`. Untuk melakukan instalasi, gunakan perintah berikut:
+Dalam proses pengembangan, proses fine-tuning model dilakukan menggunakan `Google Colab T4 GPU`sehingga instalasi dalam proses fine-tuning sudah terdapat pada masing-masing notebook. 
+
+Instalasi yang diperlukan jika ingin menjalakan aplikasi Mitrakara secara lokal melalui `setup.sh` yang terdapat pada direktori "scripts." 
 
 ```bash
-# installing packages
-pip install -r requirements.txt
+# make setup.sh as executable
+sudo chmod +x setup.sh
+
+# run setup.sh
+setup.sh
 ```
 
-## Fine-Tuning
-Retrieval-Augmented Generation (RAG) adalah teknik yang menggabungkan model LLM dengan model embedding. Dalam implementasi ini, dua model yang digunakan adalah:
+Sebaliknya, jika ingin menjalankan aplikasi Mitrakara melalui google colab maka user tidak perlu menginstall apa pun, cukup hanya menjalankan notebook bernama "Gradio_Deployment.ipynb" yang terdapat pada direktori "notebooks."
+
+## Development
+Retrieval-Augmented Generation (RAG) adalah teknik yang menggabungkan model LLM dengan model embedding. Sehingga terdapat dua model yang digunakan sebagai base model, yaitu:
 - **Model LLM**: `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` (tersedia di HuggingFace)
 - **Model Embedding**: `BAAI/bge-m3` (tersedia di HuggingFace)
+
+Setelah melalui proses fine-tuning kedua model diunggah pada HuggingFace.
+Untuk LLM terdapat 2 kali pengunggahan, yaitu: 
+- huggingface.co: `MarcoAland/Indo-Llama-3.1-8B-Instruct-bnb-4bit-GGUF`, dapat diakses melalui https://huggingface.co/MarcoAland/Indo-Llama-3.1-8B-Instruct-bnb-4bit-GGUF
+- ollama.com: `MarcoAland/llama3.1-rag-indo`, dapat diakses melalui https://ollama.com/MarcoAland/llama3.1-rag-indo
+Sedangkan untuk embedding model hanya diunggah 1 kali pada, yaitu:
+- huggingface.co: `MarcoAland/Indo-bge-m3`, dapat diakses melalui https://huggingface.co/MarcoAland/Indo-bge-m3
 
 ## Deployment
 Integrasi kedua model tersebut diimplementasikan menggunakan framework Gradio dengan bantuan Ollama untuk deployment model LLM. Proses deployment mencakup:
