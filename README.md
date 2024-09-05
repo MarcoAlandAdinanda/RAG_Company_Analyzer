@@ -31,7 +31,6 @@ Nama Mitrakara berasal dari bahasa Sansekerta, di mana kata ini merupakan gabung
 - [Instalasi](#instalasi)
 - [Development](#development)
 - [Deployment](#deployement)
-- [Evaluasi](#evaluasi)
 
 ## Instalasi
 Dalam proses pengembangan, proses fine-tuning model dilakukan menggunakan `Google Colab T4 GPU`sehingga instalasi dalam proses fine-tuning sudah terdapat pada masing-masing notebook. 
