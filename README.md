@@ -21,6 +21,8 @@ Dalam pengembangan talenta (talent growth), langkah awal yang diperlukan, teruta
 Sehingga tim TriwiraData menghadirkan solusi berupa aplikasi dengan nama Mitrakara, yaitu aplikasi berbasis Retrieval-Augmented Generation (RAG) untuk mengoptimalkan proses Talent Growth. 
 Nama Mitrakara berasal dari bahasa Sansekerta, di mana kata ini merupakan gabungan dari dua kata: "Mitra" dengan arti teman dan "Kara" yang berarti "yang menghasilkan."
 
+![Logo Mitrakara](mitrakara-logo.png)
+
 Dengan demikian, **Mitrakara** secara keseluruhan dapat diartikan sebagai "sahabat yang membawa manfaat" atau "teman yang bermanfaat" calam konteks ini berarti Mitrakara mampu membantu para talent sebagai teman dalam bekerja.
 
 ![User Interface Mitrakara](user_interface.png)
