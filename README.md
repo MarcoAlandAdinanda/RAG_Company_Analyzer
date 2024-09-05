@@ -64,17 +64,3 @@ Sedangkan untuk embedding model hanya diunggah 1 kali pada, yaitu:
 Integrasi kedua model tersebut diimplementasikan menggunakan framework Gradio dengan bantuan Ollama dan HuggingFace untuk deployment. Proses deployment menggunakan resource besar sehingga deployment terdapat 2 pilihan, yaitu:
 1. Google colab, dengan menggunakan GPU NVIDIA T4. 
 2. Local, dengan source code yang terdapat pada direktori "scripts." 
-
-## Evaluasi
-Evaluasi dilakukan dengan menguji sistem RAG menggunakan serangkaian pertanyaan untuk menilai kemampuannya dalam memberikan jawaban atau instruksi yang akurat. Pengujian dapat dilakukan dengan menggunakan pertanyaan pertanyaan berikut:
-1. Apa visi dan misi perusahaan?
-2. Saya harus bekerja jam berapa dan pakai pakaian apa?
-3. Bagaimana jika saya telat/terlambat?
-4. Sebagai staf penjualan, siapa saja orang yang harus saya kenal
-5. Bagaimana gambaran pekerjaan yang harus saya lakukan sebagai staf penjualan?
-6. Berapa gaji saya sebagai staf penjualan?
-7. Bagaimana cara kerja lembur dan berapa upahnya?
-8. Apakah ada jatah cuti, bagaimana caranya?
-9. Jika saudara saya menikah apakah bisa izin? Bagaimana caranya?
-10. Bagaimana sanksi jika saya melanggar peraturan?
-11. Beri contoh pelanggaran hingga membuat saya di PHK
