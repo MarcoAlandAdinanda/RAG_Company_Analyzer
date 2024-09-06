@@ -21,8 +21,6 @@ Dalam pengembangan talenta (talent growth), langkah awal yang diperlukan, teruta
 - Pembelajaran dan Pengembangan: Dengan diberinya akses langsung ke pengetahuan perusahaan, mendukung pemahaman para stakeholder dalm membuat kebijakan dan prosedur perusahaan/binis.
 - Pengambilan Keputusan yang Lebih Baik: Akses cepat ke informasi akurat memungkinkan stakeholders mengkases pengambilan keputusan yang lebih baik dan berdasarkan data asli perusahaan.
 
-![Logo Mitrakara](mitrakara-logo.png)
-
 Sehingga tim TriwiraData menghadirkan solusi berupa aplikasi dengan nama Mitrakara, yaitu aplikasi berbasis Retrieval-Augmented Generation (RAG) untuk mengoptimalkan proses Talent Growth. 
 Nama Mitrakara berasal dari bahasa Sansekerta, di mana kata ini merupakan gabungan dari dua kata: "Mitra" dengan arti teman dan "Kara" yang berarti "yang menghasilkan." Sehingga, **Mitrakara** secara keseluruhan dapat diartikan sebagai "sahabat yang membawa manfaat" atau "teman yang bermanfaat" calam konteks ini berarti Mitrakara mampu membantu para talent sebagai teman dalam bekerja.
 
