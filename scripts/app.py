@@ -46,7 +46,6 @@ iface = gr.Interface(
         "Berikut adalah beberapa tips untuk bertanya denganku✨✨✨\n1. Gunakan prompt dengan baik dan jelas.\n2. Prompt tidak boleh mengandung ujaran kebencian.\n3. Don't forget to enjoy the conversation.😊 \n\n Referensi format pertanyaan dapat diakses melalui bagian examples."
     ),
     examples=[
-        ["Hai"],
         ["Apa visi dan misi perusahaan"],
         ["Saya harus bekerja jam berapa dan pakai pakaian apa"],
         ["Bagaimana jika saya telat/terlambat"],
