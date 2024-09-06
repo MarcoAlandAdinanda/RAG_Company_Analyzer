@@ -43,7 +43,7 @@ iface = gr.Interface(
     outputs=gr.Textbox(label="Respons Mitrakara"),
     title="Hai, namaku Mitrakara. Selamat datang!👋",
     description=(
-        "Berikut adalah beberapa tips untuk bertanya denganku✨✨✨\n1. Gunakan prompt dengan baik dan jelas.\n2. Prompt tidak boleh mengandung ujaran kebencian.\n3. Don't forget to enjoy the conversation.😊 \n\n Referensi format pertanyaan dapat diakses melalui bagian examples."
+        "Berikut adalah beberapa tips untuk bertanya denganku✨✨✨\n1. Gunakan prompt dengan baik dan jelas.\n2. Prompt tidak boleh mengandung ujaran kebencian.\n3. Don't forget to enjoy the conversation.😊 \n\n Dokumen perusahaan yang digunakan Mitrakara dapat diakses melalui laman berikut: https://drive.google.com/drive/folders/1wXwk4RJ7PSxJBA_d9ZjaPlA6tu-e5jjO"
     ),
     examples=[
         ["Apa visi dan misi perusahaan"],
