@@ -63,4 +63,4 @@ Sedangkan untuk embedding model hanya diunggah 1 kali pada, yaitu:
 ## Deployment
 Integrasi kedua model tersebut diimplementasikan menggunakan framework Gradio dengan bantuan Ollama dan HuggingFace untuk deployment. Proses deployment menggunakan resource besar sehingga deployment terdapat 2 pilihan, yaitu:
 1. Google colab, dengan menggunakan GPU NVIDIA T4. 
-2. Local, dengan source code yang terdapat pada direktori "scripts." 
+2. Local, dengan source code yang terdapat pada direktori "scripts."
